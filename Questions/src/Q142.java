@@ -16,6 +16,12 @@
  **/
 public class Q142 {
 
+    /**
+     * 两步操作，一：双指针确认是否是环，二：从头节点开始遍历找到与慢指针相交的节点即可
+     *
+     * @param head 头节点
+     * @return 相交节点
+     */
     public ListNode detectCycle(ListNode head) {
         if (head == null) {
             return null;

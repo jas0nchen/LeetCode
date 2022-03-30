@@ -32,7 +32,7 @@ public class Q35 {
     private int binarySearch(int[] a, int target) {
         int l = 0, r = a.length - 1, ans = 0;
         while (l <= r) {
-            int mid = (l + r) / 2;
+            int mid = l + (r - l) / 2;
             if (a[mid] == target) {
                 return mid;
             } else if (a[mid] < target) {
